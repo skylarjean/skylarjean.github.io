@@ -18,10 +18,6 @@ I started by following [this tutorial from Strikingloo][1], which then lead to a
 
 Something about having a mac with some OS
 
-[Some tips on markdown][9]
-
-[9]:https://www.markdownguide.org/basic-syntax/ "Basic Markdown Syntax"
-
 ## Forking Template
 
 I made a fork of [Strikingloo's template][2].

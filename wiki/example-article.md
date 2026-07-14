@@ -1,8 +1,10 @@
 ---
 title: Your Title
-date: 2022-01-01
+date: 
 description: A relevant description (Used for SEO and search)
-tags: tag1, tag2, tag3, these are used for search
+tags:
+  - tag1
+  - tag2
 importance: 5
 abstract: "Leave empty if you don't want to feature an abstract. "
 ---

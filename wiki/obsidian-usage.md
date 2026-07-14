@@ -23,9 +23,12 @@ I use the [AnuPpuccin theme][1], which is available directly through the Obsidia
 [2]: https://github.com/obsidian-community/obsidian-style-settings "Style Settings Plugin"
 
 ## Templates
-I used the [Obsidian guidance for templates][4] to setup my templates
+I used the [Obsidian guidance for templates][4] to setup my templates, and then slightly modified [StrikingLoo's example article][5] from their [public template][6].
 
 [4]: https://obsidian.md/help/plugins/templates "Obsidian Templates"
 
+[5]: https://github.com/StrikingLoo/Personal-Wiki-Site-Setup/blob/master/wiki/example-article.md "StrinkingLoo Example Article"
+
+[6]: https://github.com/StrikingLoo/Personal-Wiki-Site-Setup "Strinkingloo Site Template"
 ## Plugins 
 

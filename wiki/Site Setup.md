@@ -155,3 +155,25 @@ bundle update
 ## Host on Github Pages
 
 This part I haven't done yet. We'll follow the Strikingloo tutorial when I get to it.
+
+
+## Editing Everything
+
+with obsidian!
+
+## Tracking Everything
+
+with git!
+
+needed in the `.gitignore`:
+
+![[.gitignore]]
+
+```
+_site/*
+.jekyll-cache/*
+.DS_Store
+.obsidian/*
+```
+
+I was screwing around with a way to include file text directly in the markdown, and I don't know if it will work with or without jekyll etc, and I need to do my other job right now and walk away from it. most unfortunate. 

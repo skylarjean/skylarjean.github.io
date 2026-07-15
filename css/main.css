@@ -1,9 +1,19 @@
+/* Color Pallet:
+Vintage Grape: #3F3047
+Rust Brown: #8F3714
+Lavendar Grey: #989EC3
+Desert Sand: #D7BBA8
+Floral White: #FFFBF1
+*/
+
 :root {
-  --bkg: #D2D79F;
-  --font-color: #483838;
-  --header-anchor-color: #483838;
-  --anchor-hover-color: #42855B;
-  --wiki-bkg-color-hover: #52956B;
+  --bkg: #3F3047;
+  --font-color: #FFFBF1;
+  --header-text-color: #D7BBA8; 
+  --footer-color: #FFFBF1;
+  --button-color: #D7BBA8;
+  --anchor-hover-color: #E77B49; 
+  --wiki-bkg-color-hover: #E77B49; 
 }
 
 body {
@@ -22,7 +32,7 @@ p, a, ul li, ol li {
 p a, ul li a {
     text-decoration: none;
     font-size: 1em;
-    border-bottom: 3px solid var(--anchor-hover-color);
+    border-bottom: 3px solid var(--font-color);
 }
 
 p a:hover, ul li a:hover {
@@ -35,17 +45,10 @@ h1, h1 a {
     line-height: 1.4em;
 }
 
-h2 a, h3 a {
+h2 a, h3 a, h4 a, h5 a, h6 a {
     text-decoration: none;
 }
 
-h2 a:hover, h3 a:hover {
-    text-decoration: underline;
-}
-
-h2, h3, h2 a, h3 a, h1, h1 a{
-    font-family: 'Lato','Georgia','Helvetica', Verdana;
-}
 h2, h2 a {
     font-size: 1.4em;
     line-height: 1.5;
@@ -53,13 +56,15 @@ h2, h2 a {
 h3, h3 a {
     font-size: 1.2em;
     line-height: 1.5;}
-h1,h2,h3, h1 a, h2 a, h3 a {
+
+h1,h2,h3,h4,h5,h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-family: 'Helvetica', Verdana;
     font-weight: bold;
-    color:var(--header-anchor-color);
+    color:var(--header-text-color);
 }
 
 footer {
-    border-top: 1px solid var(--header-anchor-color);
+    border-top: 1px solid var(--footer-color);
     font-size: .8em;
 }
 
@@ -76,7 +81,7 @@ footer ul li {margin-right: 1em;}
 footer a {
     text-decoration: none;
     border-bottom: none;
-    color: var(--header-anchor-color);
+    color: var(--footer-color);
 }
 
 nav ul li a, footer ul li a {border-bottom: none;}
@@ -90,7 +95,7 @@ nav {float: right;}
 nav a {
     padding: 0.8em;
     border-radius: 5%;
-    background-color: var(--header-anchor-color);
+    background-color: var(--button-color);
     color: var(--bkg);
     text-decoration: none;
     border-bottom: none;}
@@ -107,7 +112,7 @@ strong { font-weight: bolder;}
     padding-left: .5em;
     padding-bottom: .1em;
     display: block;
-    border-bottom: 2px dashed var(--header-anchor-color);
+    border-bottom: 2px dashed var(--header-text-color);
 }
 
 .head-banner p {
@@ -124,7 +129,7 @@ strong { font-weight: bolder;}
 @media only screen and (max-width: 500px) {
     nav, .head-banner p {float: none; text-align: center;}
   nav ul li {display:inline-block; margin-bottom:0.8em; width: 45%;
-    background-color: var(--header-anchor-color);
+    background-color: var(--header-text-color);
     padding: .2em; border-radius: 5%;}
   nav ul {width: 100%;}
   nav a {padding: 0;}
@@ -154,7 +159,7 @@ blockquote {
   background:#EfEfEf;
 
   padding:1.2em 1.4em 1.2em 1.4em;
-  border-left:10px solid var(--header-anchor-color) ;
+  border-left:10px solid var(--header-text-color) ;
   position: relative;
   
 }
@@ -163,7 +168,12 @@ blockquote::after{
   content: '';
 }
 
-pre, code {background-color: #444; color: #fff; font-family: Verdana; padding: 10px; line-height: 1.75;}
+pre, code {
+    background-color: #8F3714; 
+    color: var(--font-color); 
+    font-family: Courier New;
+    text-decoration: bold; 
+    line-height: 1.75;}
 
 .wiki-item:hover {
   background-color:var(--wiki-bkg-color-hover);
@@ -179,7 +189,7 @@ pre, code {background-color: #444; color: #fff; font-family: Verdana; padding: 1
   margin:3px;
   text-decoration: none;
   font-weight: bold;
-  background-color: var(--header-anchor-color);
+  background-color: var(--header-text-color);
   color: var(--bkg);
   border-radius: 4%;
   width:95%; 

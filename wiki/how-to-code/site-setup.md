@@ -39,6 +39,7 @@ Checkout more about Homebrew [here][4].
 
 1. Check that mac software is up to date 
 2. Install Homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+
 ### Install `chruby` and `ruby`
 Jekyll is built on ruby, so we need ruby installed. Seemingly, the different versions of ruby are known to cause problems, so we need `chruby` to manage them. Different "packages" within `ruby` are called gems. We'll install some gems later.
 
@@ -151,6 +152,7 @@ bundle update
 ## Host on Github Pages
 
 This part I haven't done yet. We'll follow the Strikingloo tutorial when I get to it.
+https://idratherbewriting.com/documentation-theme-jekyll/mydoc_publishing_github_pages.html
 
 
 ## Editing Everything
@@ -163,8 +165,6 @@ with git!
 
 needed in the `.gitignore`:
 
-![[.gitignore]]
-
 ```
 _site/*
 .jekyll-cache/*
@@ -172,4 +172,3 @@ _site/*
 .obsidian/*
 ```
 
-I was screwing around with a way to include file text directly in the markdown, and I don't know if it will work with or without jekyll etc, and I need to do my other job right now and walk away from it. most unfortunate. 

@@ -12,30 +12,20 @@ importance: 5
 abstract: "Leave empty if you don't want to feature an abstract. "
 ---
 
-I started by following [this tutorial from Strikingloo][1], which then lead to a number of other tutorials and steps and deviations. This is a rough copy of what I did, so I have any hope of doing it again.
-
-[1]: < https://strikingloo.github.io/personal-wiki-set-up> "Strikingloo Personal Wiki Setup"
-
-Something about having a mac with some OS
+I started by following [this tutorial from Strikingloo](https://strikingloo.github.io/personal-wiki-set-up), which then lead to a number of other tutorials and steps and deviations. This is a rough copy of what I did, so I have any hope of doing it again.
 
 ## Forking Template
 
-I made a fork of [Strikingloo's template][2].
-
-[2]: https://github.com/StrikingLoo/Personal-Wiki-Site-Setup "Strinkingloo Site Template"
+I made a fork of [Strikingloo's template](https://github.com/StrikingLoo/Personal-Wiki-Site-Setup).
 
 Name it *username.github.io*
 
 ## Install Relevant Software
 
-This site is built with `Jekyll`, and our instructions say simply to "install `jekyll`. Turns out, this isn't as simple as it seems. We're following [this tutorial to install Jekyll][3].
-
-[3]: https://jekyllrb.com/docs/installation/macos/ "Jekyll Installation"
+This site is built with `Jekyll`, and our instructions say simply to "install `jekyll`. Turns out, this isn't as simple as it seems. We're following [this tutorial to install Jekyll](https://jekyllrb.com/docs/installation/macos/).
 
 ### Install Homebrew
-Checkout more about Homebrew [here][4].
-
-[4]: https://brew.sh/ "Homebrew Homepage"
+Checkout more about Homebrew [here](https://brew.sh/).
 
 1. Check that mac software is up to date 
 2. Install Homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
@@ -43,9 +33,7 @@ Checkout more about Homebrew [here][4].
 ### Install `chruby` and `ruby`
 Jekyll is built on ruby, so we need ruby installed. Seemingly, the different versions of ruby are known to cause problems, so we need `chruby` to manage them. Different "packages" within `ruby` are called gems. We'll install some gems later.
 
-There is a long tutorial about how to install `ruby` [here][5]. I didn't actually follow it, I just took a few nuggets.
-
-[5]: https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/ "Installing Ruby on Mac"
+There is a long tutorial about how to install `ruby` [here](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/). I didn't actually follow it, I just took a few nuggets.
 
 1. Install `chruby` and `ruby`: 
 ```
@@ -64,9 +52,7 @@ echo "chruby ruby-3.4.1" >> ~/.bash_profile
 
 Relaunch the terminal to make sure that it sets up ruby correctly. You can run `ruby -v` or `chruby` to see that the version of ruby that is active.
 
-You can also use `which ruby` to check that it's using the one you installed rather than the system one. (You really should install `chruby` and `ruby` as [opposed to using the one that comes installed on Mac][6].)
-
-[6]: <https://www.moncefbelyamani.com/why-you-shouldn-t-use-the-system-ruby-to-install-gems-on-a-mac/> "Don't Use System Ruby on Mac"
+You can also use `which ruby` to check that it's using the one you installed rather than the system one. (You really should install `chruby` and `ruby` as [opposed to using the one that comes installed on Mac](https://www.moncefbelyamani.com/why-you-shouldn-t-use-the-system-ruby-to-install-gems-on-a-mac/).)
 
 To make sure the project uses the correct version of `ruby`, make a `.ruby_version` file with the version you have installed in it. That looks like
 ````
@@ -88,9 +74,7 @@ gem install jekyll
 gem install jekyll bundler
 ```
 
-Note that the Strikingloo's tutorial use `sudo` in front of the gem installs; however other installs say to [never use `sudo` for gem installs][7].
-
-[7]: https://www.moncefbelyamani.com/why-you-should-never-use-sudo-to-install-ruby-gems/ "Don't Use Sudo for Gem Installs"
+Note that the Strikingloo's tutorial use `sudo` in front of the gem installs; however other installs say to [never use `sudo` for gem installs](https://www.moncefbelyamani.com/why-you-should-never-use-sudo-to-install-ruby-gems/).
 
 ##  Backend Setup
 
@@ -135,9 +119,7 @@ gem "liquid", "~> 4.0.4"
 
 Explanation:
 
-I was running into this error of the form `Liquid Exception: undefined method tainted?`. There seems to be come backward compatibility issues between  `liquid`, `jekyll`, and `ruby`. There are lots of people [negotiating this on the forums][8].
-
-[8]: https://talk.jekyllrb.com/t/liquid-4-0-3-tainted/7946/17 "Liquid Error Forum"
+I was running into this error of the form `Liquid Exception: undefined method tainted?`. There seems to be come backward compatibility issues between  `liquid`, `jekyll`, and `ruby`. There are lots of people [negotiating this on the forums](https://talk.jekyllrb.com/t/liquid-4-0-3-tainted/7946/17).
 
 You can see what versions are required to work together in the `Gemfile.lock`. This file seems to be generated by something and is **not** meant to be edited by people. But is is a (mostly) human-readable list of dependencies etc. A the bottom of the file, it specifies which version of `liquid` this version of `jekyll` needs. Mine says "4.04", so that's why I use that version specification in the `Gemfile`. 
 
@@ -154,10 +136,10 @@ bundle update
 This part I haven't done yet. We'll follow the Strikingloo tutorial when I get to it.
 https://idratherbewriting.com/documentation-theme-jekyll/mydoc_publishing_github_pages.html
 
-
 ## Editing Everything
 
-with obsidian!
+I've been locally editing my wiki and blog with [[Obsidian]]. Though, it's worth noting that Obsidian only "sees" `.md` markdown files. For the `.html` and `.css` files, I've been using [Sublime Text](https://www.sublimetext.com/). 
+
 
 ## Tracking Everything
 

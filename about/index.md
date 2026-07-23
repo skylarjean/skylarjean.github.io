@@ -2,11 +2,16 @@
 layout: default
 title: About Me
 ---
-
 ## About Me
-  
+
 I'm Skylar Callis, a researcher in mathematics, an artist, and a generally curious person. 
 
+- [[#About Me|About Me]]
+	- [[#About Me#Research and Education|Research and Education]]
+	- [[#About Me#What Else?|What Else?]]
+- [[#Purposes of This Site|Purposes of This Site]]
+	- [[#Purposes of This Site#The Digital Garden|The Digital Garden]]
+	- [[#Purposes of This Site#The Blog|The Blog]]
 ### Research and Education
 
 I'm currently a graduate student working on my joint M.S. in Data Science and Ph.D. in Applied Mathematics at the University of Delaware, with an estimated graduation date of June 2030.
